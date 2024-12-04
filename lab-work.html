@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="iPhone, купить iPhone, Apple, смартфоны, мобильные телефоны, электроника,
+        интернет-магазин iPhone, iPhone 14, iPhone 13, аксессуары для iPhone, продажа смартфонов, iPhone скидки,
+        лучшие предложения iPhone">
+    <meta name="description" content="Интернет-магазин iPhone и техники Apple. Лучшие цены на iPhone 16,
+        iPhone 15 и аксессуары. Быстрая доставка и гарантия на всю продукцию. Купите iPhone онлайн с доставкой
+        по всей стране.">
+    <title>QTECH</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <!-- Левая часть навбара -->
+            <div class="navbar__left">
+                <button class="navbar__menu-button" id="menuButton">
+                    <img src="img/hamburger.svg" alt="Menu">
+                </button>
+                <!-- Выпадающее меню -->
+                <div class="navbar__menu" id="menu">
+                    <ul class="navbar__menu-list">
+                        <li class="navbar__menu-item"><a href="index.html" class="navbar__menu-link">Для лабы</a></li>
+                        <li class="navbar__menu-item"><a href="#category2" class="navbar__menu-link">Аксессуары</a></li>
+                        <li class="navbar__menu-item"><a href="#category3" class="navbar__menu-link">Популярное</a></li>
+                        <li class="navbar__menu-item"><a href="#category4" class="navbar__menu-link">Скидки</a></li>
+                    </ul>
+                </div>
+                <a href="index.html" class="navbar__logo">
+                    <img src="img/QTECH.svg" alt="logo">
+                </a>
+            </div>
+            <!-- Правая часть навбара -->
+            <div class="navbar__right">
+                <a href="#" class="navbar__icon">
+                    <img src="img/magn_glass.svg" alt="Phone">
+                </a>
+                <a href="#" class="navbar__icon">
+                    <img src="img/phone.svg" alt="Phone">
+                </a>
+                <a href="#" class="navbar__icon">
+                    <img src="img/account.svg" alt="Phone">
+                </a>
+                <a href="#" class="navbar__icon">
+                    <img src="img/cart.svg" alt="User">
+                </a>
+            </div>
+        </nav>
+    </header>
+    <!-- Мейн -->
+
+    <main>
+        <div class="lwtask">
+            <!-- Описание -->
+            <section class="about">
+                <h1 class="about__title">О нас</h1>
+                <p>Добро пожаловать в QTECH — ваш надежный партнер в мире технологий!
+                    Мы предлагаем <strong>качественную электронику</strong>, стильные аксессуары и выгодные предложения.
+                    Найдите всё, что нужно для комфортной и современной жизни.
+                </p>
+            </section>
+            <!-- Наши Достижения -->
+            <section class="achievements">
+                <h2 class="achievements__title">Наша политика</h2>
+                <article>
+                    <h3>Ключевые принципы</h3>
+                    <ul class="achievements__list">
+                        <li>Всегда успеваем <b>вовремя</b>.</li>
+                        <li>Мы ценим <ins>время</ins> наших клиентов</li>
+                        <li>Мы уверены в качестве своих продуктов</li>
+                    </ul>
+                    <h3>Наша формула успеха</h3>
+                    <ol>
+                        <li>Время</li>
+                        <li>Качество</li>
+                        <li>Низкие цены</li>
+                    </ol>
+                </article>
+            </section>
+
+            <!-- ASCII-графика -->
+            <article>
+                <h2>Пседографичный Гусь</h2>
+                <pre>
+░░░░░░░░░░░░░░░░░░░░
+░░░░░ЗАПУСКАЕМ░░░░░░░
+░ГУСЯ░▄▀▀▀▄░РАБОТЯГИ░░
+▄███▀░◐░░░▌░░░░░░░░░
+░░░░▌░░░░░▐░░░░░░░░░
+░░░░▐░░░░░▐░░░░░░░░░
+░░░░▌░░░░░▐▄▄░░░░░░░
+░░░░▌░░░░▄▀▒▒▀▀▀▀▄
+░░░▐░░░░▐▒▒▒▒▒▒▒▒▀▀▄
+░░░▐░░░░▐▄▒▒▒▒▒▒▒▒▒▒▀▄
+░░░░▀▄░░░░▀▄▒▒▒▒▒▒▒▒▒▒▀▄
+░░░░░░▀▄▄▄▄▄█▄▄▄▄▄▄▄▄▄▄▄▀▄
+░░░░░░░░░░░▌▌░▌▌░░░░░
+░░░░░░░░░░░▌▌░▌▌░░░░░
+░░░░░░░░░▄▄▌▌▄▌▌░░░░░
+                </pre>
+            </article>
+
+            <!-- Блок кода -->
+            <section>
+                <h2>Пример кода</h2>
+                <p>Вот небольшой фрагмент кода на JavaScript, который вдохновил меня:</p>
+                <pre>
+<code>
+const menuButton = document.getElementById('menuButton');
+const menu = document.getElementById('menu');
+
+// Проверяем, что элементы существуют
+if (menuButton && menu) {
+    // Обработчик клика на кнопку гамбургера
+    menuButton.addEventListener('click', () => {
+        menu.classList.toggle('active'); // Переключаем класс 'active' для показа/скрытия меню
+    });
+
+    // Закрытие меню при клике вне меню
+    document.addEventListener('click', (event) => {
+        if (!menu.contains(event.target) && !menuButton.contains(event.target)) {
+            menu.classList.remove('active');
+        }
+    });
+}
+</code>
+                </pre>
+            </section>
+            <section class="formula">
+                <h2>Формула успеха</h2>
+                <p class="formula__description">Наша формула успеха: <strong>Работать</strong><sub>каждый день</sub> + <strong>Работать</strong><sup>каждую неделю</sup> = Успех</p>
+            </section>
+            <!-- Цитата -->
+            <aside class="quote">
+                <blockquote>
+                    "Работа <del>не</del> волк" — <strong>Джейсон Стэтхэм</strong>
+                </blockquote>
+            </aside>
+        </div>
+    </main>
+
+    <!-- Подвал -->
+    <footer class="footer">
+        <!-- Ссылки -->
+        <div class="footer__socials">
+            <a href="https://t.me/quazzaar" target="_blank" class="footer__social-link">
+                <img src="img/icons/instagram.svg" alt="Instagram">
+            </a>
+            <a href="https://t.me/quazzaar" target="_blank" class="footer__social-link">
+                <img src="img/icons/telegram.svg" alt="Telegram">
+            </a>
+        </div>
+        <!-- Текст -->
+        <p class="footer__text">© 2024 QTECH. Все права защищены.</p>
+    </footer>
+    <!-- скрипт для гамбургера -->
+    <script src="js/navbar.js" defer></script>
+</body>
+</html>
