@@ -296,11 +296,10 @@ body {
 .discount-table {
     width: 100%;
     padding: 20px 32px;
-    font-family: Arial, sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
 }
 
 .discount-table__title {
-    font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 10px;
 }
@@ -361,5 +360,13 @@ body {
 
     .categories__grid {
         grid-template-columns: 1fr;
+    }
+
+    .discount-table__header {
+        font-size: 0.8rem;
+    }
+
+    .discount-table__cell {
+        font-size: 0.6rem;
     }
 }
