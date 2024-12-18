@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="iPhone, купить iPhone, Apple, смартфоны, мобильные телефоны, электроника,
+        интернет-магазин iPhone, iPhone 14, iPhone 13, аксессуары для iPhone, продажа смартфонов, iPhone скидки,
+        лучшие предложения iPhone">
+    <meta name="description" content="Интернет-магазин iPhone и техники Apple. Лучшие цены на iPhone 16,
+        iPhone 15 и аксессуары. Быстрая доставка и гарантия на всю продукцию. Купите iPhone онлайн с доставкой
+        по всей стране.">
+    <title>QTECH</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <script src="/js/load-statistics.js" defer></script>
+</head>
+<body>
+<header>
+    <nav class="navbar">
+        <!-- Левая часть навбара -->
+        <div class="navbar__left">
+            <button class="navbar__menu-button" id="menuButton">
+                <img src="img/hamburger.svg" alt="Menu">
+            </button>
+            <!-- Выпадающее меню -->
+            <div class="navbar__menu" id="menu">
+                <ul class="navbar__menu-list">
+                    <li class="navbar__menu-item"><a href="lab-work.html" class="navbar__menu-link">Для лабы</a></li>
+                    <li class="navbar__menu-item"><a href="about.html" class="navbar__menu-link">О нас</a></li>
+                    <li class="navbar__menu-item"><a href="comments.html" class="navbar__menu-link">Комментарии</a></li>
+                    <li class="navbar__menu-item"><a href="review.html" class="navbar__menu-link">Оставить отзыв</a></li>
+                </ul>
+            </div>
+            <a href="index.html" class="navbar__logo">
+                <img src="img/QTECH.svg" alt="logo">
+            </a>
+        </div>
+        <!-- Правая часть навбара -->
+        <div class="navbar__right">
+            <a href="#" class="navbar__icon">
+                <img src="img/magn_glass.svg" alt="Phone">
+            </a>
+            <a href="#" class="navbar__icon">
+                <img src="img/phone.svg" alt="Phone">
+            </a>
+            <a href="#" class="navbar__icon">
+                <img src="img/account.svg" alt="Phone">
+            </a>
+            <a href="#" class="navbar__icon">
+                <img src="img/cart.svg" alt="User">
+            </a>
+        </div>
+    </nav>
+</header>
+<!-- Мейн -->
+
+<main>
+    <div class="container">
+        <h1 class="feedback-form__title">Оставьте отзыв</h1>
+        <form class="feedback-form" id="feedbackForm">
+            <label class="feedback-form__label" for="reviewText">Ваш отзыв:</label>
+            <textarea class="feedback-form__textarea" id="reviewText" name="reviewText" placeholder="Напишите ваш отзыв" required></textarea>
+            <button class="feedback-form__button" type="submit">Отправить отзыв</button>
+        </form>
+
+        <div class="feedback-form__submitted-review" id="submittedReviews">
+            <!-- здесь будут появляться отзывы -->
+        </div>
+    </div>
+</main>
+
+<!-- Подвал -->
+<footer>
+    <!-- Ссылки -->
+    <div class="footer__socials">
+        <a href="https://t.me/quazzaar" target="_blank" class="footer__social-link">
+            <img src="img/icons/instagram.svg" alt="Instagram">
+        </a>
+        <a href="https://t.me/quazzaar" target="_blank" class="footer__social-link">
+            <img src="img/icons/telegram.svg" alt="Telegram">
+        </a>
+    </div>
+    <!-- Текст -->
+    <p class="footer__text">© 2024 QTECH. Все права защищены.</p>
+</footer>
+<!-- скрипт для гамбургера -->
+<script src="js/navbar.js"></script>
+<script src="js/hamburger_activeState.js"></script>
+<script src="js/review.js"></script>
+</body>
+</html>

@@ -12,9 +12,13 @@
         по всей стране.">
     <title>QTECH</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <script src="/js/load-statistics.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="/js/swiper.js"></script>
 </head>
 <body>
     <header>
@@ -28,9 +32,9 @@
                 <div class="navbar__menu" id="menu">
                     <ul class="navbar__menu-list">
                         <li class="navbar__menu-item"><a href="lab-work.html" class="navbar__menu-link">Для лабы</a></li>
-                        <li class="navbar__menu-item"><a href="#category2" class="navbar__menu-link">Аксессуары</a></li>
-                        <li class="navbar__menu-item"><a href="#category3" class="navbar__menu-link">Популярное</a></li>
-                        <li class="navbar__menu-item"><a href="#category4" class="navbar__menu-link">Скидки</a></li>
+                        <li class="navbar__menu-item"><a href="about.html" class="navbar__menu-link">О нас</a></li>
+                        <li class="navbar__menu-item"><a href="comments.html" class="navbar__menu-link">Комментарии</a></li>
+                        <li class="navbar__menu-item"><a href="review.html" class="navbar__menu-link">Оставить отзыв</a></li>
                     </ul>
                 </div>
                 <a href="index.html" class="navbar__logo">
@@ -56,10 +60,32 @@
     </header>
     <!-- Мейн -->
     <main>
-        <!-- Слайдер -->
-        <section class="slider-placeholder">
-            <p>Тут будет крутой слайдер с крутыми картинками</p>
-        </section>
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <img src="/img/swiper/slider1.jpg" alt="iphone16pro">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/img/swiper/slider2.jpg" alt="iphone16pro">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/img/swiper/slider3.jpg" alt="iphone16pro">
+                </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+        </div>
+
         <!-- Смена коллекции -->
         <div class="collection-switcher">
             <button class="collection-switcher__button">ТЕХНИКА</button>
@@ -72,7 +98,9 @@
             <h2 class="popular-items__title">Популярные товары</h2>
             <div class="popular-items__list">
                 <article class="popular-items__card">
-                    <img src="img/iphone/iphone16pro.jpg" alt="Product 1" class="popular-items__img">
+                    <div class="popular-items__img-container">
+                        <img src="img/iphone/iphone16pro.jpg" alt="Product 1" class="popular-items__img">
+                    </div>
                     <div class="popular-items__info">
                         <h3 class="popular-items__name">iPhone 16</h3>
                         <p class="popular-items__price">99 999₽</p>
@@ -80,7 +108,9 @@
                     <button class="popular-items__btn">Купить</button>
                 </article>
                 <article class="popular-items__card">
-                    <img src="img/airpods/airpods4.jpg" alt="Product 2" class="popular-items__img">
+                    <div class="popular-items__img-container">
+                        <img src="img/airpods/airpods4.jpg" alt="Product 2" class="popular-items__img">
+                    </div>
                     <div class="popular-items__info">
                         <h3 class="popular-items__name">AirPods Pro</h3>
                         <p class="popular-items__price">99 999₽</p>
@@ -88,7 +118,9 @@
                     <button class="popular-items__btn">Купить</button>
                 </article>
                 <article class="popular-items__card">
-                    <img src="img/ipad/ipadpro.jpg" alt="Product 3" class="popular-items__img">
+                    <div class="popular-items__img-container">
+                        <img src="img/ipad/ipadpro.jpg" alt="Product 3" class="popular-items__img">
+                    </div>
                     <div class="popular-items__info">
                         <h3 class="popular-items__name">iPad Pro</h3>
                         <p class="popular-items__price">99 999₽</p>
@@ -96,7 +128,9 @@
                     <button class="popular-items__btn">Купить</button>
                 </article>
                 <article class="popular-items__card">
-                    <img src="img/mac/macbookpro.jpg" alt="Product 4" class="popular-items__img">
+                    <div class="popular-items__img-container">
+                        <img src="img/mac/macbookpro.jpg" alt="Product 4" class="popular-items__img">
+                    </div>
                     <div class="popular-items__info">
                         <h3 class="popular-items__name">MacBook Air</h3>
                         <p class="popular-items__price">99 999₽</p>
@@ -181,7 +215,7 @@
         </section>
     </main>
     <!-- Подвал -->
-    <footer class="footer">
+    <footer>
         <!-- Ссылки -->
         <div class="footer__socials">
             <a href="https://t.me/quazzaar" target="_blank" class="footer__social-link">
@@ -195,6 +229,7 @@
         <p class="footer__text">© 2024 QTECH. Все права защищены.</p>
     </footer>
     <!-- скрипт для гамбургера -->
-    <script src="js/navbar.js" defer></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/hamburger_activeState.js"></script>
 </body>
 </html>

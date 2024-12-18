@@ -15,6 +15,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <script src="/js/load-statistics.js" defer></script>
 </head>
 <body>
     <header>
@@ -27,10 +28,10 @@
                 <!-- Выпадающее меню -->
                 <div class="navbar__menu" id="menu">
                     <ul class="navbar__menu-list">
-                        <li class="navbar__menu-item"><a href="index.html" class="navbar__menu-link">Для лабы</a></li>
-                        <li class="navbar__menu-item"><a href="#category2" class="navbar__menu-link">Аксессуары</a></li>
-                        <li class="navbar__menu-item"><a href="#category3" class="navbar__menu-link">Популярное</a></li>
-                        <li class="navbar__menu-item"><a href="#category4" class="navbar__menu-link">Скидки</a></li>
+                        <li class="navbar__menu-item"><a href="lab-work.html" class="navbar__menu-link">Для лабы</a></li>
+                        <li class="navbar__menu-item"><a href="about.html" class="navbar__menu-link">О нас</a></li>
+                        <li class="navbar__menu-item"><a href="comments.html" class="navbar__menu-link">Комментарии</a></li>
+                        <li class="navbar__menu-item"><a href="review.html" class="navbar__menu-link">Оставить отзыв</a></li>
                     </ul>
                 </div>
                 <a href="index.html" class="navbar__logo">
@@ -74,11 +75,11 @@
                     <ul class="achievements__list">
                         <li>Всегда успеваем <b>вовремя</b>.</li>
                         <li>Мы ценим <ins>время</ins> наших клиентов</li>
-                        <li>Мы уверены в качестве своих продуктов</li>
+                        <li>Мы уверены в <em>качестве</em> своих продуктов</li>
                     </ul>
                     <h3>Наша формула успеха</h3>
                     <ol>
-                        <li>Время</li>
+                        <li><i>Время</i></li>
                         <li>Качество</li>
                         <li>Низкие цены</li>
                     </ol>
@@ -86,7 +87,7 @@
             </section>
 
             <!-- ASCII-графика -->
-            <article>
+            <article class="ascii">
                 <h2>Пседографичный Гусь</h2>
                 <pre>
 ░░░░░░░░░░░░░░░░░░░░
@@ -147,7 +148,7 @@ if (menuButton && menu) {
     </main>
 
     <!-- Подвал -->
-    <footer class="footer">
+    <footer>
         <!-- Ссылки -->
         <div class="footer__socials">
             <a href="https://t.me/quazzaar" target="_blank" class="footer__social-link">
@@ -161,6 +162,7 @@ if (menuButton && menu) {
         <p class="footer__text">© 2024 QTECH. Все права защищены.</p>
     </footer>
     <!-- скрипт для гамбургера -->
-    <script src="js/navbar.js" defer></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/hamburger_activeState.js"></script>
 </body>
 </html>
