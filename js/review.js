@@ -1,4 +1,4 @@
-function handleFormSubmit(event) {
+function handleFormSubmit() {
     const reviewText = document.getElementById('reviewText').value;
 
     if (reviewText) {
